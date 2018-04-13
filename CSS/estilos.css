@@ -1,0 +1,93 @@
+*{
+    font-family: Arial, Verdana; /*tipo de letra*/
+}
+h1{
+    text-shadow: rgb(0,0,150) 2px 3px;
+}
+@font-face{
+    font-family:'nuevafuente';
+    src: url('../fuentes/nuevafuente.ttf');
+}
+#titulo{
+    font:bold 36px nuevafuente, verdana, sans-serif;
+    color:red;
+}
+nav ul li{
+    display:inline; /*mostrar en linea*/
+    border: 1px solid green;
+    padding:10px 20px; /*horizontal vertical*/
+    border-radius:20px; /*borde cicular*/
+    box-shadow:5px 5px #333333; /*sombreado*/
+    background-color:#cccccc; /*coloreado*/
+}
+nav ul li:hover{
+    background-color:yellow; /*cambiar de color al pasar el ratón*/
+}
+nav ol li{
+    display:inline; /*mostrar en linea*/
+    border: 1px solid red;
+}
+p{
+    font-size: 20px; /*poner tamaño de letra*/
+}
+footer a{
+    color: #00ff00; /*todos los enlaces del footer de color verde*/
+}
+header, section, aside, footer, nav, article{ /*para que se lo haga a todos la que ponemos aqui*/
+    display:block;
+}
+section{ 
+   float:left;
+   width:70%; /*ajustar ancho*/
+   background-color:#cc33aa;
+   background: -webkit-linear-gradient(top, #000000, #006699);
+   background: -moz-linear-gradient(top, #000000, #006699);
+}
+aside{
+    float: left; /*llevar a la izquierda*/
+    width:30%;
+    background-color:#cccccc;
+}
+footer{
+    clear:both;
+    text-align:center; /*centrar*/
+}
+body{ /*centrar todo*/
+    text-align: center;
+}
+#parrafo1{
+    color:green; /*se pueden poner los colores en hexadecimal*/
+    font-weight: bold; /*poner en negrita*/
+    border:3px solid #000000; /*ajustar el tipo de borde*/
+    padding:20px;
+    /*margin-botton:40px; *//*ajustar margenes según la posición*/
+    /*margin-top:100px;
+    margin-left:20px;
+    margin-right:30px;*/
+}
+
+/*clase color rojo*/
+.colorrojo{
+    color: red; /* El rojo tambien se puede poner: rgb(255,0,0)*/
+}
+.botonactivo{
+    background-color:yellow;
+}
+/************DISEÑO MOVIL********************/
+@media only screen and (max-width:600px){
+    section{
+       width:100%;
+    }
+    aside{
+        width:100%;
+    }
+    nav ul li{
+        display:block;
+        margin-bottom:10px;
+    }
+}
+
+table, th, td{
+    background-color: red;
+    border: 1px solid #333333;
+}

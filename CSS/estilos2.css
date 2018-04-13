@@ -1,0 +1,47 @@
+ *{
+    font-family: Arial, Verdana; /*tipo de letra*/
+}
+h1{
+    text-shadow: rgb(0,0,150) 2px 3px;
+}
+nav ul li{
+    display:inline; /*mostrar en linea*/
+    border: 1px solid green;
+    padding:10px 20px; /*horizontal vertical*/
+    border-radius:20px; /*borde cicular*/
+    box-shadow:5px 5px #333333; /*sombreado*/
+    background-color:#cccccc; /*coloreado*/
+}
+nav ul li:hover{
+    background-color:yellow; /*cambiar de color al pasar el ratón*/
+}
+p{
+    font-size: 20px; /*poner tamaño de letra*/
+}
+footer a{
+    color: #0000ff; /*todos los enlaces del footer de color rojo*/
+}
+header, section, aside, footer, nav, article{ /*para que se lo haga a todos la que ponemos aqui*/
+    display:block;
+}
+section{ 
+   float:center;
+   width:100%; /*ajustar ancho*/
+}
+footer{
+    background-color:#cc33aa;
+}
+body{ /*centrar todo*/
+    text-align: center;
+}
+.botonactivo{
+    background-color:yellow;
+}
+@font-face{
+    font-family:'nuevafuente';
+    src: url('../fuentes/nuevafuente.ttf');
+}
+#titulo{
+    font:bold 36px nuevafuente, verdana, sans-serif;
+    color:red;
+}
